@@ -669,12 +669,12 @@
                 new URL(imageUrl);
             } catch (e) {
                 // If URL is invalid, use fallback image
-                imageUrl = 'https://www.gstatic.com/webp/gallery3/1.sm.png';
+                imageUrl = 'images/container.png';
             }
             
             row.innerHTML = `
                 <td>${product.customId || 'N/A'}</td>
-                <td><img src="${imageUrl}" alt="${product.name}" class="product-image" onerror="this.src='https://www.gstatic.com/webp/gallery3/1.sm.png'"></td>
+                <td><img src="${imageUrl}" alt="${product.name}" class="product-image" onerror="this.src='images/container.png'"></td>
                 <td>${product.name}</td>
                 <td>₱${product.priceCents}</td>
                 <td>${product.proof}</td>
